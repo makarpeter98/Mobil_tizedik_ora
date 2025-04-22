@@ -10,11 +10,12 @@ import java.util.List;
 
 @Dao
 public interface ShoppingListDAO {
-    
-	@Insert
+
+    @Insert
     public void insertItem(ShoppingListItem sli);
-    
-	@Query("SELECT * FROM ShoppingList")
+    @Query("SELECT * FROM ShoppingList")
     public LiveData<List<ShoppingListItem>> getAllItems();
-    
+    @Query("DELETE FROM ShoppingList")
+    public void clearDB();
+
 }
