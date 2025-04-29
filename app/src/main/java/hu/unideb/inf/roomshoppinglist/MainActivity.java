@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     ShoppingListDatabase shoppingListDatabase = null;
-
+    //Teszt!
     EditText newItemEditText;
     TextView resultTextView;
 
