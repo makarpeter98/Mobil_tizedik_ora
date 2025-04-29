@@ -45,14 +45,14 @@ public class MainActivity extends AppCompatActivity {
                         shoppingListDatabase.shoppingListDAO().insertItem(sli);
                     }
             ).start();
+            newItemEditText.setText("");
         });
 
-        /*
-        *
-        * IDE ÍRJÁTOK A CLEAR KÓDOT
-        *
-        * */
-        //refreshUI();
+      clearButton.setOnClickListener(view ->{
+          new Thread(
+                  () -> shoppingListDatabase.shoppingListDAO().clearDB()
+          ).start();
+      });
 
     }
 }
