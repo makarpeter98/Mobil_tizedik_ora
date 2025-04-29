@@ -46,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
                     }
             ).start();
         });
+
+        /*
+        *
+        * IDE ÍRJÁTOK A CLEAR KÓDOT
+        *
+        * */
         //refreshUI();
 
     }
